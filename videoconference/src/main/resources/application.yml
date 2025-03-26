@@ -1,0 +1,20 @@
+server:
+  port: 8081  # 8080 yerine farklı bir port
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/smartict-video
+    username: postgres
+    password: 123456789
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+jitsi:
+  domain: "meet.smartict.com"
+  api-key: "your-secret-api-key"
